@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBÜ Not Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>KBÜ Not Hesaplayıcı</h1>
+      <p>
+        Vize, yıl içi, final/bütünleme notlarını girerek başarı ve harf notunuzu
+        hesaplayabilirsiniz.
+      </p>
+
+      <form id="gradeForm">
+        <label for="vize">Vize / Ara Sınav (0-100):</label>
+        <input type="number" id="vize" min="0" max="100" required />
+
+        <label for="calisma">Yıl İçi Çalışma (Opsiyonel):</label>
+        <input type="number" id="calisma" min="0" max="100" />
+
+        <label for="final">Final (0-100):</label>
+        <input type="number" id="final" min="0" max="100" />
+
+        <label for="but">Bütünleme (Opsiyonel, final yerine geçer):</label>
+        <input type="number" id="but" min="0" max="100" />
+
+        <label>
+          <input type="checkbox" id="devamsiz" />
+          Devamsızım (F1)
+        </label>
+
+        <label for="girdiMi">Genel/Bütünleme sınavına girdim mi?</label>
+        <select id="girdiMi">
+          <option value="evet">Evet</option>
+          <option value="hayir">Hayır</option>
+        </select>
+
+        <div class="buttons">
+          <button type="submit">Hesapla</button>
+          <button type="button" id="resetBtn">Sıfırla</button>
+        </div>
+      </form>
+
+      <div id="sonuc" class="card hidden">
+        <p id="basari">Başarı Notu:</p>
+        <p id="harf">Harf Notu:</p>
+        <p id="durum">Durum:</p>
+        <p id="aciklama">Açıklama:</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

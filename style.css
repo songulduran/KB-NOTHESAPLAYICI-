@@ -1,0 +1,137 @@
+/* Genel Ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #5165a3, #315496);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Başlık */
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 26px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Form Elemanları */
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #92ff63;
+    outline: none;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Butonlar */
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #438ddc;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4aaaf3;
+}
+
+button#resetBtn {
+    background-color: #752c1d;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button#resetBtn:hover {
+    background-color: #e64c4c;
+}
+
+/* Sonuç Kartı */
+.card {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    border-radius: 12px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* Gizleme */
+.hidden {
+    display: none;
+}
+
+/* Mobil uyumlu */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
